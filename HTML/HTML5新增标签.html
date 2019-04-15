@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--新增常用标签-->
+<header>语意：定义页面头部、页眉</header>
+<nav>语意：定义导航链接</nav>
+<footer>语意：定义页面底部页脚</footer>
+<article>语意：定义文章</article>
+<section>语意：定义文档的节、区段</section>
+<aside>语意：定义其所处内容之外的内容、侧边</aside>
+
+
+<!--datalist标签-->
+<input type="text" value="输入明星" list="star"/>
+<datalist id="star">
+    <option>刘德华</option>
+    <option>刘晓庆</option>
+    <option>刘若英</option>
+    <option>张学友</option>
+</datalist>
+
+
+<!--fieldset标签-->
+<fieldset>
+    <legend>用户登录</legend>
+    用户名：<input type="text"><br>
+    密码：<input type="password">
+</fieldset>
+
+
+<!--新增input type属性值-->
+<fieldset>
+    <legend>新增input type属性值</legend>
+    <label>email:<input type="email"></label><br>
+    <label>tel:<input type="tel"></label><br>
+    <label>url:<input type="url"></label><br>
+    <label>number:<input type="number"></label><br>
+    <label>search:<input type="search"></label><br>
+    <label>range:<input type="range"></label><br>
+    <label>time:<input type="time"></label><br>
+    <label>date:<input type="date"></label><br>
+    <label>datetime-local:<input type="datetime-local"></label><br>
+    <label>month:<input type="month"></label><br>
+    <label>week:<input type="week"></label><br>
+    <label>color:<input type="color"></label><br>
+    <input type="submit">
+    <input type="reset">
+</fieldset>
+
+
+<!--新增属性-->
+<form action="">
+    placeholder:<input type="text" placeholder="请输入用户名"><br>
+    autofocus:<input type="text" autofocus><br>
+    <input type="file" multiple><br>
+    1.autocomplete 必须有提交按钮<br>
+    2.表单必须给名字<br>
+    autocomplete: <input type="text" autocomplete name="username"><br>
+    required:<input type="text" required><br>
+    accesskey:<input type="text" accesskey="s"><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
