@@ -2,19 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS外观属性</title>
     <style>
-        p:first-of-type {
-            background-color: bisque;
+        p {
+            font-size: 16px;
         }
-        p:last-of-type {
-            background-color: bisque;
+
+        p:nth-of-type(n) {
+            background-color: pink;
+            /*改变行距*/
+            line-height: 30px;
+            /*首行缩进*/
+            text-indent: 2em;
+            /*字间距*/
+            /*letter-spacing: 1em;*/
+            /*单词间距，对中文无效，改变单词间距*/
+            word-spacing: 1em;
+            /*颜色半透明，取值范围是0~1之间，四个参数都不能省略*/
+            color:rgba(254,0,0,0.5);
         }
-        p:nth-of-type(2) {
-            background-color: bisque;
-        }
-        p:nth-last-of-type(2) {
-            background-color: bisque;
+
+        h2 {
+            font-size: 50px;
+            /*改变水平对齐方式*/
+            text-align: center;
+            /*字体阴影*/
+            text-shadow: 5px 11px 5px rgba(0,0,0,0.5);
         }
     </style>
 </head>
@@ -42,6 +55,9 @@
 <h4>我们的服务理念：用爱成就每一位学生</h4>
 <p>
     爱是教育的灵魂，教育根植于爱。作为教育从业者要发自内心地关爱学生，全心全意地培养学生，竭尽所能成就学生的梦想。
+</p>
+<p>
+    i am a girl,i like drank milk.
 </p>
 </body>
 </html>
