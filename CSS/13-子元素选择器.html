@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素选择器</title>
+    <style>
+        /*在此处如果注释掉后代选择器，只留下子元素选择器，则会使得一、二级菜单都变蓝，原因是二级菜单是一级菜单的子元素，当未显示指定其样式时会继承父元素样式*/
+        .item li {     /*后代选择器*/
+            color: red;
+        }
+        .item > li {    /*子元素选择器*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+要求：
+1. 一级菜单颜色变红
+<ul class="item">
+    <li>一级菜单
+        <ul>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+    <li>一级菜单
+        <ul>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+    <li>一级菜单
+        <ul>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
