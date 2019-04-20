@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: #cccccc;
+            font: bold 6em "microsoft yahei";
+        }
+        /*凸起文字：左上是黑色阴影，右下是白色阴影*/
+        .ao{
+            color: #cccccc;
+            text-shadow: 1px 1px 1px white,
+            -1px -1px 1px black;
+        }
+        /*凸起文字：左上是白色阴影，右下是黑色阴影*/
+        .to{
+            color: #cccccc;
+            text-shadow: 1px 1px 1px black,
+            -1px -1px 1px white;
+        }
+    </style>
+</head>
+<body>
+<p class="ao">我是凹陷文字</p>
+<p class="to">我是凸起文字</p>
+
+</body>
+</html>
