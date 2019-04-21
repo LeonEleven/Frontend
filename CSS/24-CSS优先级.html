@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS优先级</title>
+    <style>
+        /*0,0,0,1*/
+        div {
+            color: red;
+        }
+
+        /*0,0,1,0*/
+        .king {
+            color: blue;
+        }
+        /*0,0,1,0*/
+        :first-child{
+            color:green;
+        }
+        /*0,1,0,0*/
+        #king2 {
+            color: pink;
+            /*无穷大∞*/
+            font-size: 10px !important;
+        }
+    </style>
+</head>
+<body>
+<!--style:1,0,0,0-->
+<div class="king" id="king2" style="color: orange;font-size: 50px">king</div>
+
+</body>
+</html>
