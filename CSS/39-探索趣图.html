@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #333;
+            font: 12px/20px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+        }
+
+        .container {
+            width: 238px;
+            height: 294px;
+            border: 1px solid #d9e0ee;
+            border-top: 3px solid #ff8400;
+            margin: 100px;
+        }
+
+        .container .title {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #e3e6ed;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .title a {
+            width: 64px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+            margin-left: 12px;
+        }
+
+        .title a:hover {
+            color: #ff8400;
+        }
+
+        .content {
+            border-bottom: 1px solid #e3e6ed;
+            padding: 7px 8px 0 8px;
+        }
+
+        .container ul {
+            /* TODO: 取消列表自带的小点 */
+            list-style: none;
+            margin-left: 8px;
+        }
+
+        .container ul li {
+            height: 26px;
+            line-height: 26px;
+            padding-left: 10px;
+            background: url("image/square.png") no-repeat left center;
+        }
+
+        .container ul li a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .container ul li a:hover {
+            color: #ff8400;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3 class="title">
+        <a href="#">探趣识图</a>
+    </h3>
+    <div class="content">
+        <a href="#">
+            <img src="image/happy.gif" height="160" width="218" alt="">
+        </a>
+    </div>
+    <ul>
+        <li><a href="#">GIF：小胖墩游泳被卡 被救后一脸无辜</a></li>
+        <li><a href="#">GIF：小胖墩游泳被卡 被救后一脸无辜</a></li>
+        <li><a href="#">GIF：小胖墩游泳被卡 被救后一脸无辜</a></li>
+    </ul>
+</div>
+</body>
+</html>
